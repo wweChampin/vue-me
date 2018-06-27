@@ -58,5 +58,5 @@ git checkout   切换分支
 2.git commit -m '随意标注'
 3.git push
 
-4.代码测试没问题  合并到主分支  git merge origin/20180111-index-wweChampin(这时候改变的是本地的分支)
+4.代码测试没问题 切换到主分支（master）上  合并到主分支 输入 git merge origin/20180111-index-wweChampin(把线上的子分支与本地的主分支合并这时候改变的是本地主分支的代码)
 5.然后  git  push
