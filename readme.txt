@@ -57,3 +57,5 @@ git checkout   切换分支
 1.git add .
 2.git commit -m '随意标注'
 3.git push
+
+4.代码测试没问题  合并到主分支  git merge origin/20180111-index-wweChampin
