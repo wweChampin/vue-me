@@ -49,9 +49,10 @@ git push 上传到github
 
 
 以后工作：
-git pull   拉取
-
-git checkout   切换分支
+git pull   与线上同步  拉取的意思
+git status  查看一下分支
+git checkout   切换到工作的分支
+切换完成后然后就可以干活了
 
 写完一部分代码
 1.git add .
