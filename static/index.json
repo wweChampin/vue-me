@@ -1,0 +1,122 @@
+{
+  "ret": true,
+  "data": {
+    "swiperList": [
+      {
+        "id": "1001",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/fc/e47aa3e1c67bbc02.jpg_750x200_0f3eecf8.jpg",
+        "link": "/list"
+      },
+      {
+        "id": "1002",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/77/f63bd04dd5319602.jpg_750x200_7a9f64f9.jpg",
+        "link": "/list"
+      },
+      {
+        "id": "1003",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/1c/4847ea66072c7b02.jpg_750x200_c32457fb.jpg",
+        "link": "/list"
+      },
+      {
+        "id": "1004",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/fc/e47aa3e1c67bbc02.jpg_750x200_0f3eecf8.jpg",
+        "link": "/list"
+      }
+    ],
+    "iconsList": [
+      {
+        "id": "1001",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/fc/e47aa3e1c67bbc02.jpg_750x200_0f3eecf8.jpg",
+        "link": "/list",
+        "title": "故宫"
+      },
+      {
+        "id": "1002",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/fc/e47aa3e1c67bbc02.jpg_750x200_0f3eecf8.jpg",
+        "link": "/list",
+        "title": "故宫"
+      },
+      {
+        "id": "1003",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/fc/e47aa3e1c67bbc02.jpg_750x200_0f3eecf8.jpg",
+        "link": "/list",
+        "title": "故宫"
+      },
+      {
+        "id": "1004",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/fc/e47aa3e1c67bbc02.jpg_750x200_0f3eecf8.jpg",
+        "link": "/list",
+        "title": "故宫"
+      },      {
+        "id": "1005",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/fc/e47aa3e1c67bbc02.jpg_750x200_0f3eecf8.jpg",
+        "link": "/list",
+        "title": "故宫"
+      },
+      {
+        "id": "1006",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png",
+        "link": "/list",
+        "title": "故宫"
+      },
+      {
+        "id": "1007",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/fc/e47aa3e1c67bbc02.jpg_750x200_0f3eecf8.jpg",
+        "link": "/list",
+        "title": "故宫"
+      },
+      {
+        "id": "1008",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/fc/e47aa3e1c67bbc02.jpg_750x200_0f3eecf8.jpg",
+        "link": "/list",
+        "title": "故宫"
+      },      {
+        "id": "1009",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/fc/e47aa3e1c67bbc02.jpg_750x200_0f3eecf8.jpg",
+        "link": "/list",
+        "title": "故宫"
+      },
+      {
+        "id": "1010",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png",
+        "link": "/list",
+        "title": "滑雪季"
+      },
+      {
+        "id": "1011",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/fc/e47aa3e1c67bbc02.jpg_750x200_0f3eecf8.jpg",
+        "link": "/list",
+        "title": "故宫"
+      },
+      {
+        "id": "1012",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/fc/e47aa3e1c67bbc02.jpg_750x200_0f3eecf8.jpg",
+        "link": "/list",
+        "title": "故宫"
+      },      {
+        "id": "1013",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/fc/e47aa3e1c67bbc02.jpg_750x200_0f3eecf8.jpg",
+        "link": "/list",
+        "title": "故宫"
+      },
+      {
+        "id": "1014",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png",
+        "link": "/list",
+        "title": "滑雪季"
+      },
+      {
+        "id": "1015",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/fc/e47aa3e1c67bbc02.jpg_750x200_0f3eecf8.jpg",
+        "link": "/list",
+        "title": "故宫"
+      },
+      {
+        "id": "1016",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1806/fc/e47aa3e1c67bbc02.jpg_750x200_0f3eecf8.jpg",
+        "link": "/list",
+        "title": "故宫"
+      }
+    ]
+  }
+}

@@ -6,12 +6,13 @@ import router from './router'
 // import TodoList from  './TodoList'
 import 'assets/css/reset.css'
 import 'assets/css/iconfont/iconfont.css'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 import FastClick from 'fastclick'
-
+import 'swiper/dist/css/swiper.css'
 FastClick.attach(document.body)   //消除移动端  300ms
 Vue.config.productionTip = false
 
-
+Vue.use(VueAwesomeSwiper)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
