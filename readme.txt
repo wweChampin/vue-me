@@ -59,7 +59,87 @@ git checkout   切换到工作的分支
 2.git commit -m '随意标注'
 3.git push
 
-4.代码测试没问题 切换到主分支（master）上  合并到主分支 输入 git merge origin/20180111-index-wweChampin(把线上的子分支与本地的主分支合并这时候改变的是本地主分支的代码)
+4.合并主分支
+bennettyw@WUQ-NB-257 MINGW64 /f/webstorm/webstormProject/vue-me (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+bennettyw@WUQ-NB-257 MINGW64 /f/webstorm/webstormProject/vue-me (master)
+$ git pull origin master
+From github.com:wweChampin/vue-me
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+bennettyw@WUQ-NB-257 MINGW64 /f/webstorm/webstormProject/vue-me (master)
+$ git merge 20180111-index-wweChampin
+Auto-merging readme.txt
+CONFLICT (content): Merge conflict in readme.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+bennettyw@WUQ-NB-257 MINGW64 /f/webstorm/webstormProject/vue-me (master|MERGING)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+bennettyw@WUQ-NB-257 MINGW64 /f/webstorm/webstormProject/vue-me (master|MERGING)
+$ git add .
+
+bennettyw@WUQ-NB-257 MINGW64 /f/webstorm/webstormProject/vue-me (master|MERGING)
+$ git commit -m 'change master'
+[master d19a6de] change master
+
+bennettyw@WUQ-NB-257 MINGW64 /f/webstorm/webstormProject/vue-me (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+bennettyw@WUQ-NB-257 MINGW64 /f/webstorm/webstormProject/vue-me (master)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 382 bytes | 382.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:wweChampin/vue-me.git
+   54960fa..d19a6de  master -> master
+
+bennettyw@WUQ-NB-257 MINGW64 /f/webstorm/webstormProject/vue-me (master)
+$ git pull origin master
+From github.com:wweChampin/vue-me
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+bennettyw@WUQ-NB-257 MINGW64 /f/webstorm/webstormProject/vue-me (master)
+$ ^C
+
+bennettyw@WUQ-NB-257 MINGW64 /f/webstorm/webstormProject/vue-me (master)
+$ git checkout 20180111-index-wweChampin
+Switched to branch '20180111-index-wweChampin'
+Your branch is up to date with 'origin/20180111-index-wweChampin'.
+
+bennettyw@WUQ-NB-257 MINGW64 /f/webstorm/webstormProject/vue-me (20180111-index-                                                                                                                wweChampin)
+$
+
+
 5.然后  git  push
 
 ==================================================================================================
