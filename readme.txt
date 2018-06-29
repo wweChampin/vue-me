@@ -59,5 +59,23 @@ git checkout   切换到工作的分支
 2.git commit -m '随意标注'
 3.git push
 
-4.代码测试没问题  合并到主分支  git merge origin/20180111-index-wweChampin(这时候改变的是本地的分支)
+4.代码测试没问题 切换到主分支（master）上  合并到主分支 输入 git merge origin/20180111-index-wweChampin(把线上的子分支与本地的主分支合并这时候改变的是本地主分支的代码)
 5.然后  git  push
+
+==================================================================================================
+
+2018/6/28
+1. 图片站位兼容方案
+    /*图片站位 兼容方案*/
+    .slide-con
+        overflow hidden
+        height 0
+        padding-bottom :31.25%   /*图片站位问题，用宽除以高*/
+    .slide-img
+        width 100%
+
+2.ajax请求  用axios
+        npm add axios
+
+3.prop  子组件接收父组件传过来的值
+4.computed 计算属性
