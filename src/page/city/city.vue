@@ -29,6 +29,7 @@
     import {getStore, setStore, removeStore} from 'src/config/mUtils'
 
     export default {
+        name:'index-city',
     	data(){
             return{
                 inputVaule:'', // 搜索地址

@@ -11,8 +11,11 @@ import FastClick from 'fastclick'
 import 'swiper/dist/css/swiper.css'
 FastClick.attach(document.body)   //消除移动端  300ms
 Vue.config.productionTip = false
-
 Vue.use(VueAwesomeSwiper)
+
+const bus = new Vue()
+Vue.prototype.$bus = bus
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

@@ -53,6 +53,9 @@ git pull   拉取
 
 git checkout   切换分支
 
+
+
+git  checkout . 可以清理没有提交到缓冲区的内容
 写完一部分代码
 1.git add .
 2.git commit -m '随意标注'
@@ -159,3 +162,35 @@ $
 3.prop  子组件接收父组件传过来的值
 4.computed 计算属性
 =======================================================================
+
+2018/6/29
+1.  git merge origin  后  卡住可以  用  :c（Linus命令）退出
+2.axios不兼容8  9  10   用 babel-polyfill   解决
+
+2018/7/1
+ 1.导航   push  与 replace  的区别
+     push 是另起一个新页面  可以后退
+     replace 不能后退
+     go  是向后跳转几部
+
+2018/7/3
+
+
+1.解耦模式路由
+
+      {
+          path: "/HelloWorld",
+          component: HelloWorld,
+          prop:true
+      },
+
+keep-alive  缓存住了
+只要写了  keep-alive  之后  才会出现   activated（重新刷新组件）声明周期函数
+
+2018/7/4
+
+1.使用  bus
+  1）.在main.js里面创建 bus
+  2）.在组件中监听change
+2..vue 的列表滚动  用  better-scroll    iscroll有坑
+3.mounted 是在页面组件挂载完成后 执行

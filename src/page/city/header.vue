@@ -19,13 +19,15 @@
 
 <script>
     export default {
-        name: 'index-header',
         methods: {
             handlerCityClick () {
                 this.$router.push('/helloWorld?name=wang')
-            }
+            },
         },
         props:['city'],
+        created () {
+            console.log("创建时执行")
+        }
     }
 </script>
 
