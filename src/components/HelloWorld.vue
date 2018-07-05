@@ -1,9 +1,10 @@
 <template>
     <div>
-        <index-header :city="city"></index-header>
+        <index-header :city="$store.state.local"></index-header>
         <index-swiper :list="swiperList"></index-swiper>
         <index-icons :list="iconsList"></index-icons>
         <index-sights></index-sights>
+        <index-local :local="$store.state.local"></index-local>
     </div>
 </template>
 
@@ -11,6 +12,7 @@
 
     import IndexHeader from '@/page/index/header.vue'
     import IndexSights from '@/page/index/sights.vue'
+    import IndexLocal from '@/page/index/localtion.vue'
     import IndexSwiper from './swiper.vue'
     import IndexIcons from './icons.vue'
     import axios from 'axios'
@@ -20,11 +22,13 @@
             IndexHeader,
             IndexSwiper,
             IndexIcons,
-            IndexSights
+            IndexSights,
+            IndexLocal
         },
         data () {
             return {
                 city : '',
+                local:'天津',
                 swiperList : [],
                 iconsList : [],
                 msg : "helloWorld Mr  wang"
@@ -42,9 +46,21 @@
                 console.log(data)
                 this.swiperList = data.swiperList;
                 this.iconsList = data.iconsList;
-                this.city = data.city
-                localStorage.city = data.city
-                console.log(this.city)
+//                this.city = data.city
+//                localStorage.city = data.city
+//                console.log(this.city)
+//                console.log(this.$store.state.local)
+
+                //同步vuex
+//                if(!this.$store.state.local){
+//                    this.$store.commit('changeLocal',data.city)
+//                    console.log(this.$store.state.local)
+//                }
+//                异步vuex
+                if(!this.$store.state.local){
+                    this.$store.dispatch('changeLocalDelayFiveSeconds',data.city)
+                    console.log(this.$store.state.local)
+                }
                 //bus  为公用的存储的区域
 //                this.$bus.staticData = {
 //                    city: data.city
@@ -66,8 +82,14 @@
         },
         created () {
             this.getIndexData()
-            this.bindEvents()
+//            this.bindEvents()
             console.log("创建时执行")
+        },
+        watch : {
+            '$store.state.city' () {
+                this.getIndexData()
+                console.log("keep-alive后 请求只请求一次，所以想要再次请求接口需要，监听数据的变化来，执行请求接口的函数")
+            }
         }
     }
 </script>

@@ -6,7 +6,11 @@
         <div v-for="item in list">
             {{item}}
         </div>
+        <div>bus+webStorage方式:</div>
         <city-choose></city-choose>
+        <div>Vuex方式</div>
+        <city-choose></city-choose>
+        <city-local :local="$store.state.local"></city-local>
     </div>
 </template>
 
@@ -14,6 +18,7 @@
 
     import IndexHeader from '@/page/city/header.vue'
     import CityChoose from '@/page/city/cityChoose.vue'
+    import CityLocal from '@/page/city/localtion.vue'
     import IndexSwiper from './swiper.vue'
     import IndexIcons from './icons.vue'
     import axios from 'axios'
@@ -23,7 +28,8 @@
             IndexHeader,
             IndexSwiper,
             IndexIcons,
-            CityChoose
+            CityChoose,
+            CityLocal
         },
         data () {
             return {
@@ -62,6 +68,7 @@
             handleGetDayTripSucc (res) {
                 this.list = res.data.data.list
                 console.log(res)
+                console.log(this.$store.state.local)
             },
             handleGetDayTripErr () {
                 console.log('error')
