@@ -194,3 +194,8 @@ keep-alive  缓存住了
   2）.在组件中监听change
 2..vue 的列表滚动  用  better-scroll    iscroll有坑
 3.mounted 是在页面组件挂载完成后 执行
+
+2018/7/5
+vuex
+Actions 异步的修改 state
+Mutations 同步的修改 state

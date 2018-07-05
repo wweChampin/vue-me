@@ -3,7 +3,7 @@
         <div class="city-title" @click="handlerClick">
             南京
         </div>
-        <div class="city-title" @click="handlerClick">
+        <div class="city-title city-choose2" @click="handlerClick">
             重庆
         </div>
     </div>
@@ -14,9 +14,11 @@
         methods:{
             handlerClick(e) {
                 const city  = e.target.innerHTML
+                this.$store.commit('changeLocal',city)
 //                console.log(city);
                 this.$bus.$emit("change",city)
                 this.$router.go(-1)
+
             }
         }
     }
@@ -25,4 +27,6 @@
     .city-title
         background red
         color #ffffff
+    .city-choose2
+        margin-bottom .5rem
 </style>
