@@ -34,7 +34,6 @@
   
 <style lang="scss" scoped>
     @import 'src/style/mixin';
-  
     .rating_page{
         position: absolute;
         top: 0;
@@ -48,5 +47,4 @@
             font-family: Helvetica Neue,Tahoma,Arial;
         }
     }
-    
 </style>

@@ -16,6 +16,8 @@
     import IndexSwiper from './swiper.vue'
     import IndexIcons from './icons.vue'
     import axios from 'axios'
+    // 在单独构建的版本中辅助函数为 Vuex.mapState  { mapState }  意位  mapState = vuex.mapState
+    import { mapState,mapActions } from 'vuex'
     export default {
         name: 'index',
         components: {
@@ -27,17 +29,24 @@
         },
         data () {
             return {
-                city : '',
-                local:'天津',
                 swiperList : [],
                 iconsList : [],
                 msg : "helloWorld Mr  wang"
             }
         },
+        computed : {
+            //... 展开运算符
+            ...mapState({
+                local:'local'
+                        })
+        },
         methods: {
+            ...mapActions ({
+                delayCity: 'changeLocalDelayFiveSeconds'
+            }),
             getIndexData () {
                 const city = localStorage.city ? localStorage.city : '北京'
-                axios.get('/api/index.json?city='  + city)
+                axios.get('/api/index.json?city='  + this.local)
                      .then(this.handleGetDataSucc.bind(this))
                      .catch(this.handleGetDataErr.bind(this))
             },
@@ -57,8 +66,8 @@
 //                    console.log(this.$store.state.local)
 //                }
 //                异步vuex
-                if(!this.$store.state.local){
-                    this.$store.dispatch('changeLocalDelayFiveSeconds',data.city)
+                if(!this.local){
+                    this.delayCity(data.city)
                     console.log(this.$store.state.local)
                 }
                 //bus  为公用的存储的区域
@@ -86,7 +95,7 @@
             console.log("创建时执行")
         },
         watch : {
-            '$store.state.city' () {
+            'local' () {
                 this.getIndexData()
                 console.log("keep-alive后 请求只请求一次，所以想要再次请求接口需要，监听数据的变化来，执行请求接口的函数")
             }

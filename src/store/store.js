@@ -5,33 +5,16 @@
 
 import Vue from  'vue'
 import Vuex from 'vuex'
-
+import state from './state'
+import getters from './getters'
+import actions from './action'
+import mutations from './mutations'
 Vue.use(Vuex)
 const store = new Vuex.Store({
- state: {
-     local: localStorage.local || ''
- },
- getters: {
-     doubleCity (state) {
-         return state.local + state.local
-     }
- },
- actions: {
-     changeLocalDelayFiveSeconds(context,local) {
-         setTimeout(() => {
-             context.commit('changeLocal',local)
-             console.log("异步vuex")
-         },5000)
-     }
- },
- mutations: {
-     changeLocal(state, local){
-         localStorage.local = local
-         state.local = local
-         console.log('什么情况', local)
-
-     }
- }
+ state,
+ getters,
+ actions,
+ mutations
 })
 
 export default store

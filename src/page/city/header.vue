@@ -12,7 +12,7 @@
             <!--路径形式-->
             <!--<router-link to="/helloWorld1/123">乌鲁木齐</router-link>   -->
             <!--传参形式-->
-            <router-link to="/helloWorld1?id=123">{{city}}</router-link>
+            <router-link to="/helloWorld2?id=456">{{city}}</router-link>
         </div>
     </div>
 </template>

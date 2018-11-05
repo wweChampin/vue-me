@@ -1,12 +1,16 @@
 <template>
     <div>
         您的位置:<router-link to="/helloWorld1?id=123" class="local">{{local}}</router-link>
-        <div>getter（计算属性）==》》{{$store.getters.doubleCity}}</div>
+        <div>getter（计算属性）==》》{{doubleCity}}</div>
     </div>
 </template>
 <script>
+    import { mapGetters } from 'vuex'
     export default {
         name: 'index-local',
+        computed : {
+            ...mapGetters(['doubleCity'])
+        },
         props:['local']
     }
 </script>

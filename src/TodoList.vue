@@ -31,9 +31,9 @@ export default {
             this.list.push(this.inputValue);
             this.inputValue = ""
         },
-      handleDelete (index) {
+        handleDelete (index) {
             this.list.splice(index,1);
-      }
+        }
     }
 }
 </script>

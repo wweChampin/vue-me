@@ -1,4 +1,4 @@
-Git is a version control system.
+﻿Git is a version control system.
 Git is free software.
 1.$ vue init webpack my-project  或  $ vue init webpack-simple my-project 搭建脚手架完成
 2.安装   fastclick （移动端的300ms点击事件延迟） 安装完成后 之后，
@@ -8,7 +8,15 @@ Git is free software.
 
      FastClick.attach(document.body);
 3.# install
-  npm install stylus -g  安装  stylus （css编译预处理器）
+
+安装stylus
+
+方法一  npm install stylus -g  安装  stylus （css编译预处理器）
+
+方法二
+  npm install stylus
+  npm install stylus stylus-loader
+
 4.设置reset.CSS
 5.量好 设计版是几倍图
 
@@ -33,6 +41,8 @@ git push 上传到github
  8.输入  ls  列出文件夹  含有公钥和私钥
  9. cat is_rsa.pub  打开公钥文件   复制下
  10  去github 去ssh 设置添加ssh
+
+github  937524664@qq.com     Wang@937524664
 
 
 上传github步骤  ：
@@ -199,3 +209,12 @@ keep-alive  缓存住了
 vuex
 Actions 异步的修改 state
 Mutations 同步的修改 state
+2018/7/6
+
+操作dom  用 ref （引用）
+
+<div class='header' ref='header'></div>
+
+console.log( this.$refs.header)   //  <div class='header' ref='header'></div>
+
+this.$refs.header.style.backgroundColor = 'red'
